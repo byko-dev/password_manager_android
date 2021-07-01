@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddActivity"
+    tools:showIn="@layout/activity_add">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".InfoActivity"
+        tools:layout_editor_absoluteY="0dp"
+        tools:showIn="@layout/activity_info">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="107dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/charsStr"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.654"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPassword"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <TextView
+            android:id="@+id/txtViewTitle"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/titleStr"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTitle"
+            app:layout_constraintStart_toStartOf="@+id/editTitle" />
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="247dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="92dp"
+            android:autofillHints=""
+            android:hint="@string/TitleEdit"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.136"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="273dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/save_credentialsCheckButton"
+            android:onClick="addNewPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editUrl" />
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="247dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/usernameInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.143"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/usernameTextView"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/editUsername"
+            app:layout_constraintTop_toBottomOf="@+id/editTitle" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="104dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="12dp"
+            android:text="Password:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editUsername" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="247dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="37dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="76dp"
+            android:text="Url:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+        <EditText
+            android:id="@+id/editUrl"
+            android:layout_width="308dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="url"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.282"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <Button
+            android:id="@+id/buttonGenerate"
+            android:layout_width="150dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:text="Generate"
+            android:onClick="generate"
+            app:layout_constraintStart_toStartOf="@+id/editPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

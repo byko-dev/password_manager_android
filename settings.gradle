@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='passwd_manager_android'

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Password Manager</string>
+    <string name="btn_login">Login</string>
+    <string name="zaloguj_sie">Zaloguj sie</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="title_activity_table">Passwords</string>
+    <string name="hide_password">Show password</string>
+    <string name="label1"><![CDATA[Developed by Byko & Zeroche 2020]]></string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="Title">Title</string>
+    <string name="TitleEdit">Title</string>
+    <string name="titleView">TextView</string>
+    <string name="usernameView">Name</string>
+    <string name="passwordView">TextView</string>
+    <string name="passwordEditText">Name</string>
+    <string name="urlEditText">urlValue</string>
+    <string name="dateEditText">null</string>
+    <string name="editPasswordButton">Save changes</string>
+    <string name="usernameTextView">Username:</string>
+    <string name="usernameInfo">Username</string>
+    <string name="delete_password">Delete Password</string>
+    <string name="titleStr">Title</string>
+    <string name="save_credentialsCheckButton">Save credentials</string>
+    <string name="title_activity_add">Add password</string>
+    <string name="charsStr">Chars [0]</string>
+</resources>
